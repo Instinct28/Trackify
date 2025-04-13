@@ -2,11 +2,6 @@
 # Trackify
 
 Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently.
-#### Web Link: https://trackify.duckdns.org
-| Admin Credentials | Employee Credentials |
-|-----------------------------------------|-----------------------------------------|
-| Email: testadmin@gmail.com |  Email: testemployee@gmail.com |
-| Password- 123@testadmin | Password- 123@Testemployee |
 
 ## Features
 
@@ -18,11 +13,11 @@ Trackify is a web application designed to streamline task management and enhance
 
 - Employee Management:
 
-  - Admin Dashboard: The admin has the ability to add employees, deactivate accounts, and view a list of all employees.
+  - Admin Dashboard: The admin can add employees, deactivate accounts, and view a list of all employees.
   - Employee Profile Update: Employees can update their profile information and password, except for the email ID.
 
 - Task Management:
-  - Add Tasks: Employees can log tasks for each day, including task description, type (break, meeting, or work), start time, and duration.
+  - Add Tasks: Employees can log tasks for each day, including task description, type (break, meeting, or work), start time and duration.
   - Date Filtering: Users can filter and view tasks and associated graphical information for specific dates.
 - Graphical Information:
   - Pie Charts: Two pie charts display task distribution for the current day and the previous day, categorized by break, meeting, and work.
@@ -41,7 +36,7 @@ Trackify is a web application designed to streamline task management and enhance
 
 ### Configure the client
 
-1. Navigate to client folder: `cd client`
+1. Navigate to the client folder: `cd client`
 2. Build the docker image for the client in dev mode: `docker build -f Dockerfile.dev -t trackify-react-image .`
 3. Set up and configure the environment variables, create a `.env` file in the client folder and add the following environment variables:
 
@@ -51,9 +46,9 @@ REACT_APP_API_URL = http://localhost:8800/api
 
 ### Configure the server
 
-1. Navigate to server folder: `cd server`
+1. Navigate to the server folder: `cd server`
 2. Build the docker image for the server in dev mode: `docker build -f Dockerfile.dev -t trackify-server-image .`
-3. Set up the database and configure the environment variables by following the instructions in the next steps.
+3. Set up the database and configure the environment variables by following the following steps.
 
 ### Set up the database
 
